@@ -23,6 +23,18 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<warName>springsecurityexample</warName>					
+					<outputDirectory>C:\Apache\apache-tomcat-7.0.40\webapps</outputDirectory>
+				</configuration>
+			</plugin>
+			
+			
 			<plugin>
 				<groupId>org.codehaus.cargo</groupId>
 				<artifactId>cargo-maven2-plugin</artifactId>
@@ -210,10 +222,9 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test-mvc</artifactId>
-			<version>1.0.0.BUILD-SNAPSHOT</version>
-			<scope>test</scope>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test-mvc</artifactId>
+		    <version>1.0.0.M2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
